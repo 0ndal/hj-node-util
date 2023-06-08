@@ -1,9 +1,9 @@
 {
-  "name": "hj-util",
+  "name": "hjutil",
   "version": "1.0.0",
   "description": "hj's personal node util library",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/0ndal/hj-node-util.git"

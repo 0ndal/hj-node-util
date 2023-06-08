@@ -4,7 +4,7 @@ import * as common from './common/index.js'
 /**
  * rest api http request
  */
-const httpRequest = ( targetURL, httpMethod, retry, timeToDelay ) => {
+const httpRequest = async ( targetURL, httpMethod, retry, timeToDelay ) => {
     const datas = {
         httpMethod,
         retry,
@@ -12,11 +12,8 @@ const httpRequest = ( targetURL, httpMethod, retry, timeToDelay ) => {
     }
     
     try {
-        restapi.httpRequest(targetURL, datas).then((response) => {
-            return response
-        }).catch(error => {
-            throw new Error(error)
-        });
+        let response = await restapi.httpRequest(targetURL, datas)
+        return response
     }
     catch (e) {
         throw new Error(error)
