@@ -1,14 +1,14 @@
 import axios, * as others from 'axios'
 import * as common from '../common/index.js'
 
-const httpRequest = async ( targetURL, datas ) => {
+const httpRequest = async ( targetURL, requestParams ) => {
     let {
         httpMethod,
         retry = 0,
         timeToDelay = 0,
         params = null,
         data = null
-    } = datas
+    } = requestParams
 
     console.log("REST API request ===========================>")
     if(common.isEmpty(targetURL)) {
