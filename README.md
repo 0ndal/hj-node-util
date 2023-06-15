@@ -1,4 +1,4 @@
-# hj-node-util v1.1.1
+# hj-node-util v1.1.2
 hj's node.js util
 
 ## Installtion
