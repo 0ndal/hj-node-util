@@ -18,7 +18,7 @@ const sleep = ( ms ) => {
     })
 }
 
-export  {
+module.exports = {
     isEmpty,
     sleep
 }

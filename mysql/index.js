@@ -1,5 +1,5 @@
-// const mysql = require('mysql2/promise')
-import mysql, * as others from 'mysql2/promise'
+const mysql = require('mysql2/promise')
+// import mysql, * as others from 'mysql2/promise'
 
 var pool
 
@@ -73,7 +73,7 @@ const executeQuerys = async (querys, paramsArray) => {
     }
 }
 
-export {
+module.exports = {
     createPool,
     executeQuery,
     executeQuerys

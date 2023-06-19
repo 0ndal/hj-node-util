@@ -1,5 +1,9 @@
-import axios, * as others from 'axios'
-import * as common from '../common/index.js'
+// import axios, * as others from 'axios'
+// import axios from "axios"
+
+// import * as common from '../common/index.js'
+const axios = require('axios')
+const common = require("../common/index")
 
 const httpRequest = async ( targetURL, requestParams ) => {
     let {
@@ -68,8 +72,10 @@ const run = async ( axiosParams ) => {
         return response
     }
     catch(e) {
-        throw new Error(e)
+        throw e
     }
 }
 
-export { httpRequest }
+module.exports = {
+    httpRequest
+}
