@@ -1,6 +1,3 @@
-// import * as restapi from './restapi/index.js'
-// import * as common from './common/index.js'
-// import * as mysql from './mysql/index.js'
 const restapi = require("./restapi/index")
 const common = require("./common/index")
 const mysql = require("./mysql/index")

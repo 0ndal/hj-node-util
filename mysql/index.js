@@ -1,5 +1,4 @@
 const mysql = require('mysql2/promise')
-// import mysql, * as others from 'mysql2/promise'
 
 var pool
 

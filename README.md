@@ -1,4 +1,4 @@
-# hj-node-util v1.1.2
+# hj-node-util v1.1.3
 hj's node.js util
 
 ## Installtion
@@ -11,7 +11,7 @@ hj's node.js util
 
 #### httpRequest
 ```
-    import { httpRequest } from 'hjutil'
+    const { httpRequest } = require('hjutil')
 
     /**
      * httpRequest
@@ -23,7 +23,7 @@ hj's node.js util
 
 #### restapi
 ```
-    import { restapi } from 'hjutil'
+    const { restapi } = require('hjutil')
 
     /**
      * httpRequest
@@ -42,7 +42,7 @@ hj's node.js util
 
 #### mysql
 ```
-    import { mysql } from 'hjutil'
+    const { mysql } = require('hjutil')
     /**
      * createPool
      * parameters:

@@ -1,7 +1,3 @@
-// import axios, * as others from 'axios'
-// import axios from "axios"
-
-// import * as common from '../common/index.js'
 const axios = require('axios')
 const common = require("../common/index")
 
